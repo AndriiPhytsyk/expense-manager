@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #ddd4ed57;
+}
+
+.header .logo {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}

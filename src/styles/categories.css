@@ -1,0 +1,32 @@
+.categories {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.categories > p {
+    margin-bottom: 40px;
+}
+
+.categories .categories-items {
+
+}
+
+.categories .categories-items {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.categories .item {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.categories-items .item .indicator {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkblue;
+}

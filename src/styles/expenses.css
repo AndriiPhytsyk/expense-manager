@@ -1,0 +1,49 @@
+.expenses {
+    margin-top: 65px;
+}
+
+.expenses .category-select {
+    width: 150px;
+}
+
+.expenses .action-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.expanses-balance {
+    margin-top: 30px;
+}
+
+.expanse-items .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.expanse-items .item .indicator {
+    display: block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: darkblue;
+}
+
+.expanse-items .item .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: azure;
+    padding: 15px;
+    margin-right: 20px;
+    width: 60%;
+}
+
+.expanse-items .item .actions {
+    display: flex;
+}
+
+.expanse-items .item .actions div:nth-child(1) {
+    margin-right: 10px;
+}
