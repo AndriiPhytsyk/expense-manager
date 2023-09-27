@@ -6,20 +6,25 @@ import Select from '@mui/material/Select';
 import {Button, Grid, TextField} from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
-import * as PropTypes from "prop-types";
 
 import '../styles/utils.css';
 import '../styles/expenses.css';
 
 
-EditIcon.propTypes = {className: PropTypes.string};
-export default function Expenses() {
+export default function Expenses({categories}) {
 
     const [age, setAge] = React.useState('');
 
     const handleChange = (event) => {
         setAge(event.target.value);
     };
+
+    // useEffect(() => {
+    //     // This gets called after every render, by default
+    //     // (the first one, and every one after that)
+    //     console.log(categories);
+    // })
+
     return (
         <div className="expenses">
             <h3>Add expenses:</h3>
@@ -40,9 +45,11 @@ export default function Expenses() {
                             label="Age"
                             onChange={handleChange}
                         >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
+                            {categories.map((category, index) => {
+                                return (
+                                    <MenuItem key={index} value={category.title}>{category.title}</MenuItem>
+                                )
+                            })}
                         </Select>
                     </FormControl>
                 </div>
